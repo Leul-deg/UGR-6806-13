@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A company like no other">
+    <title>Document</title>
+    <link href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+  <header>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-md navbar-light px-5">
+        <div class="container-xxl ">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Logo of Plantation products showing a leaf">
+          </a>
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav ">
+              <li class="nav-item  mx-2 my-2">
+                <a class="btn btn-secondary" href="index.html">Home</a>
+              </li>
+              <li class="nav-item  mx-2 my-2">
+                <a class="btn btn-secondary" href="sites.html">Sites</a>
+              </li>
+              <li class="nav-item mx-2 my-2">
+                <a class="btn btn-secondary" href="products.html">Products</a>
+              </li>
+              <li class="nav-item mx-2 my-2">
+                <a class="btn btn-secondary" href="order.html">Order</a>
+              </li>
+              <li class="nav-item mx-2 my-2">
+                <a class="btn btn-secondary" href="about.html ">About</a>
+              </li>
+              <li class="nav-item mx-2 my-2 ">
+                <a class="btn btn-secondary" href="contact.html">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+</header>
+
+    <main>
+
+      <div class="container-xxl p-5 fw-light">
+
+        <div class="row align-items-center justify-content-start p-5">
+
+          <div class="col-md-7">
+
+            <form class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email" required>
+                <div class="invalid-feedback">
+                  Please enter a proper email.
+                </div>
+              </div>
+              <div class="form-group my-2">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                <div class="invalid-feedback">
+                  Please enter a proper password.
+                </div>
+              </div>
+              <div class="form-group my-2">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        
+    
+    </div>
+
+      
+
+
+
+
+
+
+      <!-- <form action="/action_page.php">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email"><br><br>
+          <label for="full_name">Full Name</label>
+          <input type="text" id="full_name" name="full_name"><br><br>
+          <label for="quality">Message</label><br>
+          <textarea id="quality" name="quality" rows="4" cols="50">
+            Enter text here...
+            </textarea><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form> -->
+    
+    </main>
+
+    
+      <footer class="mb-0 mt-5">
+        <div class="container-xxl bg-danger py-2">
+            <div class="row justify-content-center">
+                <div class="col-1 mb-1"><a href="https://www.facebook.com/"><img src="images/facebook.png" width="25px" height="25px" alt=""></a>
+            </div>
+            <div class="row justify-content-center">
+                
+                <div class="col-1 mb-1"><a href="https://www.youtube.com/"><img src="images/instagram.png" width="25px" height="25px" alt=""></a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-1 mb-1"><a href="https://web.telegram.org/k/"><img src="images/telegram.png" width="25px" height="25px" alt=""></a>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="">back to top</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- <a href="https://web.telegram.org/k/" target="_blank">telegram</a>
+        <a href="https://www.youtube.com/" target="_blank">youtube</a>
+        <a href="https://www.facebook.com/" target="_blank">facebook</a>
+        <a href="#top">Back to top</a> -->
+    </footer>
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+ <script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.prototype.slice.call(forms)
+.forEach(function (form) {
+  form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+})()
+</script>
+
+</body>
+</html>
